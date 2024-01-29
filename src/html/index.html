@@ -18,12 +18,16 @@
         </p>
       </header>
 
-      <section class="offers home__offers"></section>
+      @@include('blocks/i-want.html', {class: 'home__i-want'})
       @@include('blocks/about.html', {class: 'home__about'})
-      <section class="upcoming home__upcoming"></section>
-      @@include('blocks/blog-listing.html', {"class": "home__listing"})
+
+      @@include('blocks/upcoming.html', {"class": "home__upcoming"})
+      @@include('blocks/blog-listing.html', {class: 'home__listing'})
       @@include('blocks/contacts.html', {class: 'home__contacts'})
-      <div class="doit home__doit"></div>
+      <div class="home__doit">
+        <p class="home__doit-text1">Просто делайте, что нравится, </p>
+        <p class="home__doit-text2">а мы вам поможем</p>
+      </div>
     </div>
   </main>
 

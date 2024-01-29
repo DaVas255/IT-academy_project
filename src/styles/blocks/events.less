@@ -1,19 +1,29 @@
 .events {
-	padding: 140px 0 100px;
-
-	&__title {
-		margin-top: 116px;
-		font-size: 22px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 30px; /* 136.364% */
-	}
-
+	padding-top: 138px;
 	&__listing {
 		margin-bottom: 100px;
 	}
 
+	&__title {
+		align-self: center;
+	}
+
+	&__container {
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		padding-left: 40px;
+		padding-right: 40px;
+		max-width: 1414px;
+		width: 100%;
+		flex-direction: column;
+	}
+
 	&__services {
+		.container;
 		margin-bottom: 50px;
 	}
 
@@ -22,5 +32,23 @@
 		margin: 0 0 60px;
 		font-size: 16px;
 		line-height: 22px;
+	}
+
+	&__tariffs-table {
+		margin-bottom: 50px;
+	}
+
+	&__services-items {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 67px;
+		margin: 0 0 90px;
+	}
+	&__show {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 70px 0 100px 0;
 	}
 }
